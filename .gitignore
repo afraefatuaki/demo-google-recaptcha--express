@@ -1,7 +1,7 @@
 # Node.js
 node_modules/
 
-# Idea
+# IDE
 .vscode/
 
 # Build
@@ -9,3 +9,6 @@ dist/
 
 # macOS
 .DS_Store
+
+# Environment
+*.env 
