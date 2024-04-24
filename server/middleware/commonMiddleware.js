@@ -1,10 +1,10 @@
-import express from 'express';
-import helmet from 'helmet';
-import cors from 'cors';
+const express = require('express');
+const helmet = require('helmet');
+const cors = require('cors');
 
-import { isDevelopmentEnvironment } from '../utils/environment.mjs';
+const { isDevelopmentEnvironment } = require('../utils/environment.js');
 
-export function applycommonMiddleware(app) {
+function applycommonMiddleware(app) {
   // Provide HTTP headers security
   app.use(helmet());
 
@@ -19,3 +19,5 @@ export function applycommonMiddleware(app) {
 
   if (isDevelopmentEnvironment()) console.info('🔧 Common middlware applied');
 }
+
+module.exports = applycommonMiddleware;

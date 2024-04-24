@@ -1,8 +1,8 @@
-import 'dotenv/config';
-import express from 'express';
-import routes from './routes/index.mjs';
-import { applycommonMiddleware } from '../server/middleware/commonMiddleware.mjs';
-import { getPortNumber, getEnvironment } from '../server/utils/environment.mjs';
+require('dotenv').config();
+const express = require('express');
+const routes = require('./routes/index.js');
+const applycommonMiddleware = require('./middleware/commonMiddleware.js');
+const { getPortNumber, getEnvironment } = require('./utils/environment.js');
 
 const app = express();
 const port = getPortNumber();
