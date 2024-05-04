@@ -1,12 +1,15 @@
 {
   "name": "demo-google-recaptcha--express",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "type": "commonjs",
+  "description": "My webpack project",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "nodemon server/app.js"
+    "test": "jest --watch",
+    "server": "nodemon server/server.js",
+    "serve": "webpack serve --watch",
+    "build:dev": "webpack --mode=development",
+    "build:prod": "webpack --mode=production --node-env=production",
+    "watch": "webpack --watch"
   },
   "keywords": [],
   "author": "",
@@ -19,6 +22,13 @@
     "helmet": "^7.1.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.24.4",
+    "@babel/preset-env": "^7.24.4",
+    "@webpack-cli/generators": "^3.0.7",
+    "babel-loader": "^9.1.3",
+    "css-loader": "^7.1.1",
+    "html-webpack-plugin": "^5.6.0",
+    "jest": "^29.7.0",
     "nodemon": "^3.1.0",
     "prisma": "^5.12.1",
     "webpack": "^5.91.0",
