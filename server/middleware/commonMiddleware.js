@@ -4,7 +4,7 @@ const cors = require('cors');
 
 const { isDevelopmentEnvironment } = require('../utils/environment.js');
 
-function applycommonMiddleware(app) {
+function applyCommonMiddleware(app) {
   // Provide HTTP headers security
   app.use(helmet());
 
@@ -20,4 +20,4 @@ function applycommonMiddleware(app) {
   if (isDevelopmentEnvironment()) console.info('🔧 Common middlware applied');
 }
 
-module.exports = applycommonMiddleware;
+module.exports = applyCommonMiddleware;
