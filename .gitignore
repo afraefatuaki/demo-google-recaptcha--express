@@ -3,9 +3,10 @@ node_modules/
 
 # IDE
 .vscode/
+.idea/
 
 # Build
-dist/
+client/dist/
 
 # macOS
 .DS_Store
