@@ -1,20 +1,21 @@
-<!DOCTYPE html>
+<!DOCTYPE >
 <html lang="">
     <head>
         <meta charset="utf-8" />
         <title>Webpack App</title>
         <script src='https://www.google.com/recaptcha/api.js?render=6Lc3MMwpAAAAAEyyOgL7dAUZtCMFEXrrwbZL6_oy'></script>
+        <link rel="stylesheet" type="text/css" href="style.css" />
     </head>
     <body>
         <form action="" id="form" enctype="multipart/form-data">
             <label for="name">Name</label><br>
-            <input type="text" id="name" name="name" value="John"><br>
+            <input type="text" id="name" name="name" value="John" required><br>
             <label for="email">Email</label><br>
-            <input type="email" id="email" name="email" value="Doe"><br><br>
-            <label for="Message">Message</label><br>
-            <input type="text" id="Message" name="Message" value="Message"><br><br>
+            <input type="email" id="email" name="email" value="Doe" required><br><br>
+            <label for="message">Message</label><br>
+            <input type="text" id="message" name="message" value="Write your Message" required><br><br>
             <input type="submit" value="Submit">
+            <p class="hide-error"></p>
         </form>
     </body>
-    
 </html>
