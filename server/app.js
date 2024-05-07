@@ -1,18 +1,11 @@
 require('dotenv').config();
 const express = require('express');
 const routes = require('./routes/index.js');
-const applycommonMiddleware = require('./middleware/commonMiddleware.js');
-const { getPortNumber, getEnvironment } = require('./utils/environment.js');
+const applyCommonMiddleware = require('./middleware/commonMiddleware.js');
 
 const app = express();
-const port = getPortNumber();
-const environment = getEnvironment();
 
-applycommonMiddleware(app);
+applyCommonMiddleware(app);
 app.use(routes);
 
-const server = app.listen(port, () => {
-  console.info(
-    `🔌 Server listening at http://localhost:${port} as ${environment}`
-  );
-});
+module.exports = app;
