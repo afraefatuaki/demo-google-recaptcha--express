@@ -4,11 +4,11 @@
   "description": "My webpack project",
   "private": true,
   "scripts": {
-    "test": "jest --watch",
-    "server": "nodemon server/server.js",
-    "serve": "webpack serve --watch",
     "build:dev": "webpack --mode=development",
     "build:prod": "webpack --mode=production --node-env=production",
+    "serve": "webpack serve --watch",
+    "server": "nodemon server/server.js",
+    "test": "jest --watch",
     "watch": "webpack --watch"
   },
   "keywords": [],
