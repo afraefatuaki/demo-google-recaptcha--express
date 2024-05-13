@@ -1,7 +1,7 @@
 const { describe, expect, test } = require('@jest/globals');
 const { getEnvironment } = require('../../utils/environment');
 
-describe('get current environment', () => {
+describe('Get current environment', () => {
   test('should return the correct environment', () => {
     process.env.NODE_ENV = 'development';
     expect(getEnvironment()).toBe('development');
