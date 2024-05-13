@@ -1,7 +1,6 @@
+const cors = require('cors');
 const express = require('express');
 const helmet = require('helmet');
-const cors = require('cors');
-
 const { isDevelopmentEnvironment } = require('../utils/environment.js');
 
 function applyCommonMiddleware(app) {
